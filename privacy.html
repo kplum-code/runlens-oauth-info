@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RunLens — zasady przetwarzania danych</title><style>body{font:18px/1.6 system-ui,sans-serif;max-width:46rem;margin:3rem auto;padding:0 1.25rem;color:#162c28;background:#f8faf7}h1,h2{line-height:1.2}a{color:#00634e}</style></head><body><main>
+<p><a href="index.html">← RunLens</a></p><h1>Zasady przetwarzania danych</h1>
+<p>RunLens jest prywatną aplikacją właściciela konta. Po udzieleniu przez niego zgody korzysta z Gmail API z uprawnieniem do odczytu skrzynki. Google nie ogranicza tego uprawnienia do pojedynczej etykiety; aplikacja wybiera wiadomości oznaczone „Trening”.</p>
+<p>Aplikacja zapisuje na prywatnym serwerze właściciela treść, nagłówki, identyfikatory i informacje o załącznikach pobranych wiadomości, aby można je było przeglądać. Załączniki pozostają w Gmailu i można je otworzyć w oryginalnych wiadomościach. Poświadczenia dostępu są przechowywane oddzielnie od widoku aplikacji.</p>
+<p>Synchronizacja odbywa się cyklicznie. Lokalna kopia magazynu korespondencji jest przechowywana na tym samym serwerze; obecnie nie jest objęta istniejącą kopią poza serwerem. Usunięcie etykiety powoduje ukrycie wiadomości po pełnej synchronizacji, ale lokalne dane nie są automatycznie usuwane.</p>
+<p>Aplikacja nie wysyła wiadomości, nie zmienia ich w Gmailu i obecnie nie przekazuje treści wiadomości zewnętrznemu modelowi AI. Właściciel może cofnąć zgodę w ustawieniach bezpieczeństwa swojego konta Google.</p>
+</main></body></html>
